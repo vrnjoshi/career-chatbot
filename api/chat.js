@@ -1,8 +1,6 @@
 import 'dotenv/config';
 
-import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
-import { HuggingFaceInferenceEmbeddings } from "@langchain/community/embeddings/hf";
-
+import { ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { TextLoader } from "langchain/document_loaders/fs/text";
@@ -35,13 +33,11 @@ export default async function handler(request, response) {
     });
     const splitDocs = await splitter.splitDocuments(docs);
 
-    const embeddings = new HuggingFaceInferenceEmbeddings({
-      apiKey: process.env.HUGGINGFACEHUB_API_KEY,
+    // Use Gemini for embeddings
+    const embeddings = new GoogleGenerativeAIEmbeddings({
+      apiKey: process.env.GOOGLE_API_KEY,
     });
-    const vectorStore = await MemoryVectorStore.fromDocuments(
-      splitDocs,
-      embeddings
-    );
+    const vectorStore = await MemoryVectorStore.fromDocuments(splitDocs, embeddings);
     const retriever = vectorStore.asRetriever();
 
     const promptTemplate = PromptTemplate.fromTemplate(
@@ -53,10 +49,9 @@ export default async function handler(request, response) {
       `
     );
 
-    // Use Gemini for the chat model
     const model = new ChatGoogleGenerativeAI({
       apiKey: process.env.GOOGLE_API_KEY,
-      model: "gemini-1.5-flash-latest",
+      model: "gemini-2.5-flash",
       temperature: 0,
     });
 
