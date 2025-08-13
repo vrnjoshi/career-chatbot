@@ -1,52 +1,99 @@
-🤖 Career Chatbot
+
+# 🤖 Career Chatbot
+
 A personal portfolio website featuring a custom-trained chatbot powered by my professional resume and experience.
 
-✨ Features
-Custom-Trained Chatbot: The chatbot is trained exclusively on my professional data, including my skills, work experience, and projects.
+---
 
-Minimalist UI: A clean, modern, and responsive user interface inspired by the Google search page.
+## ✨ Features
 
-Free & Secure Hosting: The website is hosted for free on Vercel with a custom varunjoshi.vercel.app domain and HTTPS.
+- **Custom-Trained Chatbot:** Trained exclusively on my professional data (skills, work experience, projects).
+- **Minimalist UI:** Clean, modern, and responsive interface inspired by Google Search.
+- **Free & Secure Hosting:** Hosted on Vercel with HTTPS and a custom domain.
+- **Serverless Backend:** Chatbot logic runs on a Vercel Serverless Function for scalability and cost-effectiveness.
 
-Serverless Backend: The chatbot's logic runs on a Vercel Serverless Function, making it scalable and cost-effective.
+---
 
-🧠 How It Works: Retrieval-Augmented Generation (RAG)
-The chatbot's core functionality is built using a modern AI technique called Retrieval-Augmented Generation (RAG).
+## 🧠 How It Works: Retrieval-Augmented Generation (RAG)
 
-Data Source: My resume data is stored in a data.txt file in the project's backend.
+1. **User submits a question** via the web UI.
+2. **Frontend** sends the question to the `/api/chat` endpoint.
+3. **Backend (Vercel Serverless Function):**
+	 - Loads and splits `data.txt` (your resume) into chunks.
+	 - Converts chunks and the user question into embeddings (using Google Gemini/Hugging Face).
+	 - Finds the most relevant chunks using vector similarity.
+	 - Combines the context and question, then sends to Google Gemini for answer generation.
+4. **Response** is sent back to the frontend and displayed to the user.
 
-Document Loading: When a user asks a question, the API first loads and splits the resume data into smaller chunks.
+---
 
-Embeddings: The chunks of data are converted into numerical representations called embeddings using a Hugging Face model.
+## 🗂️ Project Structure
 
-Retrieval: The user's question is also converted into an embedding, which is then used to find the most relevant chunks from my resume.
+```
+career-chatbot/
+│
+├── api/
+│   └── chat.js         # Serverless backend logic (RAG pipeline)
+├── data.txt            # Your resume data (knowledge base)
+├── index.html          # Main UI
+├── script.js           # Frontend logic (handles chat input/output)
+├── style.css           # UI styling
+├── vercel.json         # Vercel deployment config
+└── README.md           # Project documentation
+```
 
-Generation: The most relevant chunks are combined with the user's original question and sent to a Google Gemini model. The model then generates an answer based only on the provided context.
+---
 
-This process ensures the chatbot's responses are accurate, factual, and specific to my experience.
+## 🏗️ Architecture & Flow Diagram
 
-🛠️ Technologies Used
-Frontend: HTML, CSS, JavaScript
+```mermaid
+graph TD
+		A[User] -->|Types question| B[Frontend (index.html, script.js)]
+		B -->|POST /api/chat| C[Serverless API (api/chat.js)]
+		C -->|Loads| D[data.txt]
+		C -->|Splits & Embeds| E[Vector Store (in-memory)]
+		C -->|Finds relevant chunks| F[Retriever]
+		C -->|Sends context + question| G[Google Gemini Model]
+		G -->|Answer| C
+		C -->|Response| B
+		B -->|Displays answer| A
+```
 
-Backend: Vercel Serverless Functions (Node.js)
+---
 
-AI Framework: LangChain.js (for building the RAG pipeline)
+## 🛠️ Technologies Used
 
-Hosting: Vercel (free tier)
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Vercel Serverless Functions (Node.js)
+- **AI Framework:** LangChain.js (RAG pipeline)
+- **AI Models:** Hugging Face (embeddings), Google Gemini (chat)
+- **Hosting:** Vercel
+- **Version Control:** Git & GitHub
 
-AI Models:
+---
 
-Hugging Face (for document embeddings)
+## 🚀 Deployment & Configuration
 
-Google Gemini (for conversational chat)
+- **Vercel** auto-deploys from GitHub.
+- **Environment Variables:**
+	- `HUGGINGFACEHUB_API_KEY` (for embeddings)
+	- `GOOGLE_API_KEY` (for Gemini chat)
+- **.npmrc:** Use `legacy-peer-deps` to resolve dependency conflicts.
 
-Version Control: Git and GitHub
+---
 
-🚀 Deployment & Configuration
-To deploy the project, I used Vercel's platform, which automatically integrates with GitHub. The project required the following environment variables to be set in the Vercel dashboard and a local .npmrc file to handle dependency conflicts:
+## 📚 Usage
 
-HUGGINGFACEHUB_API_KEY: Used by Hugging Face for embeddings.
+1. Open the website.
+2. Ask questions about your career, skills, or projects.
+3. The chatbot responds using only the information in your resume.
 
-GOOGLE_API_KEY: Used by Google Gemini for chat.
+---
 
-.npmrc: A file that forces npm install to use the legacy-peer-deps flag to resolve package conflicts.
+## 📄 License
+
+MIT License
+
+---
+
+*This project demonstrates how to build a personal AI chatbot using modern RAG techniques and serverless deployment. If you forget how it works, just check the diagram and flow above!*
