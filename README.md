@@ -46,18 +46,14 @@ career-chatbot/
 
 ## 🏗️ Architecture & Flow Diagram
 
-```mermaid
-graph TD
-		A[User] -->|Types question| B[Frontend (index.html, script.js)]
-		B -->|POST /api/chat| C[Serverless API (api/chat.js)]
-		C -->|Loads| D[data.txt]
-		C -->|Splits & Embeds| E[Vector Store (in-memory)]
-		C -->|Finds relevant chunks| F[Retriever]
-		C -->|Sends context + question| G[Google Gemini Model]
-		G -->|Answer| C
-		C -->|Response| B
-		B -->|Displays answer| A
-```
+<!--
+Diagram removed due to GitHub Markdown rendering limitations.
+The architecture is as follows:
+- User interacts with the frontend (index.html, script.js)
+- Frontend sends questions to the backend API (/api/chat)
+- Backend loads and splits data.txt, embeds data, retrieves relevant chunks, and queries Google Gemini for answers
+- Response is sent back to the frontend and displayed to the user
+-->
 
 ---
 
@@ -88,12 +84,4 @@ graph TD
 2. Ask questions about your career, skills, or projects.
 3. The chatbot responds using only the information in your resume.
 
----
 
-## 📄 License
-
-MIT License
-
----
-
-*This project demonstrates how to build a personal AI chatbot using modern RAG techniques and serverless deployment. If you forget how it works, just check the diagram and flow above!*
