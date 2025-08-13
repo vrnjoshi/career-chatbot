@@ -9,6 +9,7 @@
       background-color: #f5f5f5;
       font-family: sans-serif;
       display: flex;
+      flex-direction: column; /* Use column direction for stacking elements */
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -28,35 +29,24 @@
     input:focus {
       border-color: #0070f3;
     }
+    #chat-output {
+      margin-top: 20px;
+      padding: 10px;
+      width: 400px;
+      min-height: 50px;
+      text-align: left;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
   <div class="container">
-      <h1>Ask Me Anything</h1>
-      <input type="text" id="chat-input" placeholder="Ask about my skills, career, projects..." />
-    </div>
-
-    <script>
-      // Get the input field element by its ID
-      const inputField = document.getElementById('chat-input');
-
-      // Add an event listener to the input field
-      inputField.addEventListener('keypress', function(event) {
-        // Check if the pressed key is the "Enter" key
-        if (event.key === 'Enter') {
-          // Prevent the default form submission behavior
-          event.preventDefault();
-
-          // Get the value from the input field
-          const userInput = inputField.value;
-
-          // Log the user's input to the console
-          console.log("User Input:", userInput);
-
-          // Clear the input field after sending
-          inputField.value = '';
-        }
-      });
-    </script>
-  </body>
+    <h1>Ask Me Anything</h1>
+    <input type="text" id="chat-input" placeholder="Ask about my skills, career, projects..." />
+  </div>
+  <div id="chat-output"></div>
+  <script src="script.js"></script>
+</body>
 </html>

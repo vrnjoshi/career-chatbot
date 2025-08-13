@@ -1,0 +1,52 @@
+VARUN JOSHI
+McLean, VA | LinkedIn | 315-706-7277 | jsh.vrn@gmail.com
+SUMMARY
+Senior Quality Engineer with 12+ years of experience, specializing in leading complex quality initiatives and developing robust test automation
+solutions across hardware, web, and mobile platforms for IoT devices. Passionate about continuous learning, collaborating in dynamic environments,
+and leveraging emerging technologies like AI to drive innovation and ensure product excellence. Eager to contribute expertise to an organization that
+fosters growth and innovation.
+RELEVANT EXPERIENCE
+Senior Quality Engineer (SDET responsibilities), Quality Engineering, Alarm.com - McLean, VA
+Feb 2020 - Present
+• Spearheaded QA strategy and execution for Alarm.com's critical Keycloak authentication migration, a foundational shift to a centralized, API-
+driven IAM solution, enhancing security and ensuring seamless customer experience for partner releases.
+• Designed and implemented comprehensive API and performance testing protocols for Keycloak, collaborating cross-functionally to establish
+robust release processes.
+• Pioneered Python FastAPI AI application development, integrating with InfluxDB and GPT-4.1, to summarize complex load test results in
+natural language, enhancing trend analysis and stakeholder communication.
+• Championed secure AI adoption and knowledge sharing across the Quality Engineering department by collaborating to provision access to
+Azure AI Foundry for all QEs, fostering hands-on learning and accelerating departmental proficiency in cutting-edge AI technologies.
+• Actively contributed to Alarm.com's inaugural AI Practice Group initiatives by evaluating enterprise AI tools (Open-WebUI, GPT models) for
+practical application and usability, providing critical feedback on performance-related issues and model suitability.
+• Led process improvements by implementing monitoring for production builds, hotfixes, and DB script deployments, enabling QEs to verify
+deployments, improving overall build quality, and reducing post-release incidents through improved DB script validation.
+• Collaborated with Software Engineers to design, develop, and maintain end-to-end and performance tests for REST and gRPC APIs using tools
+like Postman and k6, integrating with CI/CD pipelines for reliable, scalable releases.
+• Partnered with Cloud Operations to develop service account solutions that resolved infrastructure issues affecting test automation, ensuring
+consistent test reliability.
+• Authored and maintained key Confluence documentation covering architecture and processes, supporting efficient onboarding and cross-
+team collaboration.
+Automation Engineer, Quality Engineering, Alarm.com - McLean, VA
+May 2017 - Feb 2020
+• Built automated test frameworks for web, mobile, and hardware, reducing manual regression time and improving release certification.
+• Mentored global team members on automation tools and best practices, enhanced test coverage through to pre-release.
+• Recognized for innovative patent submission enabling audio-visual systems for sound therapy use cases.
+Quality Engineer, Quality Engineering, Alarm.com - McLean, VA
+May 2014 - May 2017
+• Developed and maintained C# and Java test automation for hardware/software platforms.
+• Coordinated with developers and PMs to define requirements and address defects, accelerating releases.
+Programmer, Logical Labs - Sunnyvale, CA
+Mar 2013 - May 2014
+• Developed client mobile apps using JavaScript, HTML, and CSS; collaborated to enhance functionality and resolve issues.
+Mobile Application Developer, Customer Engineering, Appcelerator - Mountain View, CA
+Jan 2012 - Mar 2013
+• Supported platform developers, debugged app issues, and improved product usability through engineering collaboration.
+EDUCATION
+MS, Computer Science - Syracuse University, Syracuse, NY
+Sep 2009 - Dec 2011
+TECHNICAL SKILLS
+• Programming: Python, C#, Java, JavaScript, SQL
+• Test Automation & DevOps: Selenium, Appium, Robot Framework, Bitbucket, Bamboo, CI/CD, REST API, gRPC API
+• Tools: Git, JIRA, Confluence, Sumologic, Wavefront, Visual Studio, Postman, k6
+• AI & Cloud: Salesforce AI Associate (Certified), AI For Everyone (Coursera), Azure OpenAI (integration), Claude, GPT-4, Gemini
+• Documentation: Technical/process documentation, technical writing
