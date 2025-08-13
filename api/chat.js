@@ -15,7 +15,7 @@ async function initializeChain() {
   // This function is called only once to initialize the RAG chain
   try {
     console.log("Initializing RAG chain...");
-    const filePath = path.resolve(process.cwd(), "api", "data.txt");
+    const filePath = path.resolve(process.cwd(), "data.txt");
     console.log(`Attempting to load data from: ${filePath}`);
 
     const loader = new TextLoader(filePath);
