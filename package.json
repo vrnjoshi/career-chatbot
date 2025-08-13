@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "@langchain/google-genai": "^0.2.16",
     "dotenv": "^17.2.1",
