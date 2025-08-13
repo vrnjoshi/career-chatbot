@@ -94,11 +94,6 @@ export default async function handler(request, response) {
 
   try {
     const ragChain = await getRagChain();
-    if (!ragChain) {
-      // This will be hit if the initialization failed.
-      console.error("RAG chain is not available.");
-      return response.status(503).json({ error: 'Service is not ready, please try again later.' });
-    }
     const result = await ragChain.invoke({ question: prompt });
 
     response.status(200).json({ response: result });

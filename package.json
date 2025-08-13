@@ -3,7 +3,8 @@
   "dependencies": {
     "@langchain/google-genai": "^0.2.16",
     "dotenv": "^17.2.1",
-    "langchain": "^0.3.30"
+    "langchain": "^0.3.30",
+    "@langchain/core": "^0.2.17"
   },
   "scripts": {
     "build": "echo 'No build step required'"
