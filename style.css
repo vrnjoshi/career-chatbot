@@ -1,0 +1,77 @@
+body {
+  background-color: #f8f9fa;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #343a40;
+  padding: 20px; /* Add some padding for mobile screens */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Make the container full width on mobile */
+}
+h1 {
+  font-size: 2.5rem; /* Smaller font size for mobile */
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+h1 .ask { color: #4285F4; }
+h1 .me { color: #EA4335; }
+h1 .any { color: #FBBC05; }
+h1 .thing { color: #34A853; }
+
+input {
+  padding: 12px;
+  width: 90%; /* Use a percentage for a fluid width */
+  max-width: 500px; /* Set a max-width to prevent it from getting too big on desktops */
+  border-radius: 24px;
+  border: 1px solid #ced4da;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+}
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+#chat-output {
+  margin-top: 20px;
+  padding: 20px;
+  width: 90%; /* Use a percentage for a fluid width */
+  max-width: 500px;
+  min-height: 50px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  input {
+    width: 500px;
+  }
+  #chat-output {
+    width: 500px;
+  }
+}
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
