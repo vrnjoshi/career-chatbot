@@ -1,10 +1,12 @@
 VARUN JOSHI
-McLean, VA | LinkedIn | 315-706-7277 | jsh.vrn@gmail.com
+McLean, VA | LinkedIn: linkedin.com/in/va3unjoshi | 315-706-7277 | jsh.vrn@gmail.com
+
 SUMMARY
 Senior Quality Engineer with 12+ years of experience, specializing in leading complex quality initiatives and developing robust test automation
 solutions across hardware, web, and mobile platforms for IoT devices. Passionate about continuous learning, collaborating in dynamic environments,
 and leveraging emerging technologies like AI to drive innovation and ensure product excellence. Eager to contribute expertise to an organization that
 fosters growth and innovation.
+
 RELEVANT EXPERIENCE
 Senior Quality Engineer (SDET responsibilities), Quality Engineering, Alarm.com - McLean, VA
 Feb 2020 - Present
@@ -26,27 +28,96 @@ like Postman and k6, integrating with CI/CD pipelines for reliable, scalable rel
 consistent test reliability.
 • Authored and maintained key Confluence documentation covering architecture and processes, supporting efficient onboarding and cross-
 team collaboration.
+• Leading observability testing efforts across Alarm.com systems, coordinating with stakeholders and organizing cross-team meetings to validate
+service reliability. This includes verifying alerting mechanisms by simulating service outages, ensuring proper runbook creation, and reporting issues
+through Jira.  
+• Testing proxy services and monolith APIs designed to reduce database load, leveraging gRPC tools (grpcui, grpcurl) and k6 for load testing.  
+• Developed and shared templates for testing gRPC services, held tutorial sessions for QE teams, and integrated internal AI tools to improve prompt
+engineering and accelerate testing practices.  
+• Supporting deployment of new proxy services and monolith APIs on Kubernetes clusters, gaining hands-on experience with Kubernetes (k8s),
+ArgoCD, and Rancher.  
+• Beginning to use k9s for exploring Kubernetes application logs, improving ability to monitor and debug deployed services.  
+
 Automation Engineer, Quality Engineering, Alarm.com - McLean, VA
 May 2017 - Feb 2020
 • Built automated test frameworks for web, mobile, and hardware, reducing manual regression time and improving release certification.
 • Mentored global team members on automation tools and best practices, enhanced test coverage through to pre-release.
 • Recognized for innovative patent submission enabling audio-visual systems for sound therapy use cases.
+
 Quality Engineer, Quality Engineering, Alarm.com - McLean, VA
 May 2014 - May 2017
 • Developed and maintained C# and Java test automation for hardware/software platforms.
 • Coordinated with developers and PMs to define requirements and address defects, accelerating releases.
+
 Programmer, Logical Labs - Sunnyvale, CA
-Mar 2013 - May 2014
+Apr 2013 - May 2014
 • Developed client mobile apps using JavaScript, HTML, and CSS; collaborated to enhance functionality and resolve issues.
-Mobile Application Developer, Customer Engineering, Appcelerator - Mountain View, CA
+
+Mobile Application Developer, Appcelerator - Mountain View, CA
 Jan 2012 - Mar 2013
-• Supported platform developers, debugged app issues, and improved product usability through engineering collaboration.
+• Supported developers using Appcelerator Titanium to create native cross-platform apps, debugging issues and enhancing usability.
+
+Software Developer Intern, BNY Mellon - Pittsburgh, PA
+Aug 2011 - Dec 2011
+• Worked as a .NET developer within the Treasury Services division (Trade Services Systems).  
+• Contributed to fixes and enhancements for the Global Trade Systems application in compliance with SDLC processes.  
+• Completed unit testing, issue fixes, and performance analysis of SQL queries for Global Trade Systems.  
+• Supported Continuous Integration efforts, working on MSTest and CruiseControl build/test projects, creating weekly build reports.  
+• Recognized for high-quality issue fixes requiring no rework, reliability in completing assigned tasks, and ability to work both independently and
+collaboratively with Architecture team members.  
+
+Web Applications Developer, Syracuse University - Syracuse, NY
+May 2011 - Aug 2011
+• Built a CRM platform with PHP for Imagining America.
+• Worked on SU Abroad website using Cascade Server CMS.
+
+Mobile Application Developer, AppFury, LLC. - Syracuse, NY
+Feb 2011 - May 2011
+• Built Android/iPhone apps using Appcelerator Titanium, including “Creative Core Connect” and “CityMaps NYC.”
+
+IT Consultant, Syracuse University - Syracuse, NY
+Oct 2009 - Feb 2011
+• Provided IT support, malware removal, and troubleshooting for students and staff.
+• Assisted with campus network connectivity.
+
 EDUCATION
 MS, Computer Science - Syracuse University, Syracuse, NY
 Sep 2009 - Dec 2011
+
+BTech, Computer Science and Engineering - Amity University, India
+2005 - 2009
+
 TECHNICAL SKILLS
 • Programming: Python, C#, Java, JavaScript, SQL
 • Test Automation & DevOps: Selenium, Appium, Robot Framework, Bitbucket, Bamboo, CI/CD, REST API, gRPC API
 • Tools: Git, JIRA, Confluence, Sumologic, Wavefront, Visual Studio, Postman, k6
-• AI & Cloud: Salesforce AI Associate (Certified), AI For Everyone (Coursera), Azure OpenAI (integration), Claude, GPT-4, Gemini
+• AI & Cloud: Salesforce AI Associate (Certified), AI For Everyone (Coursera), Azure OpenAI (integration), Claude, GPT-4, Gemini, Kubernetes,
+ArgoCD, Rancher, k9s
 • Documentation: Technical/process documentation, technical writing
+
+CERTIFICATIONS
+• Titanium Certified Application Developer
+• Machine Learning for All
+• Programming Foundations: Data Structures
+• Introduction to Data Analytics in Google Cloud
+
+LANGUAGES
+• English (Full Professional Proficiency)
+• Hindi (Native or Bilingual)
+
+TOP SKILLS
+• Vercel serverless functions
+• Langchain.js
+• Hugging Face Products
+
+KEY HIGHLIGHTS
+• Over a decade of experience in software quality engineering, with a focus on building scalable test automation and ensuring reliability across IoT,
+web, and mobile platforms.  
+• Trusted for working carefully within complex systems, producing fixes and test solutions that minimize rework and improve long-term stability.  
+• Known for fostering collaboration — mentoring peers, leading tutorials, and coordinating across teams to improve testing practices and system
+observability.  
+• Strong interest in emerging technologies like AI and practical experience applying them to real testing scenarios, while helping others adopt them
+safely.  
+• Recognized by colleagues and managers for reliability, professionalism, and a steady, solutions-focused approach to problem solving.  
+• Continually expanding technical skills, recently learning Kubernetes, ArgoCD, Rancher, and k9s through hands-on involvement with deploying
+and testing new services at scale.  
