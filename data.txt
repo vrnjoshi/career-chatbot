@@ -121,3 +121,16 @@ safely.
 • Recognized by colleagues and managers for reliability, professionalism, and a steady, solutions-focused approach to problem solving.  
 • Continually expanding technical skills, recently learning Kubernetes, ArgoCD, Rancher, and k9s through hands-on involvement with deploying
 and testing new services at scale.  
+
+CAREER CHATBOT PROJECT DETAILS
+This section describes the development and architecture of the Career Chatbot project:
+
+• The Career Chatbot is a personal portfolio website featuring a custom-trained chatbot powered by my professional resume and experience.
+• The chatbot uses Retrieval-Augmented Generation (RAG) to answer questions based only on the information in my resume.
+• The frontend is built with HTML, CSS, and JavaScript, providing a minimalist, responsive user interface inspired by Google Search.
+• The backend logic runs on a Vercel Serverless Function (Node.js) and uses LangChain.js to implement the RAG pipeline.
+• When a user asks a question, the backend loads and splits the resume data (this file) into smaller chunks, converts them into embeddings using Hugging Face and Google Gemini models, and retrieves the most relevant chunks using vector similarity.
+• The most relevant chunks are combined with the user's question and sent to Google Gemini for answer generation. The response is then sent back to the frontend and displayed to the user.
+• The project is hosted on Vercel, with automatic deployments triggered by commits to the GitHub repository.
+• Environment variables are used to securely access Hugging Face and Google Gemini APIs.
+• The project demonstrates modern AI techniques, serverless deployment, and integration of resume data for personalized Q&A.
